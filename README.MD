@@ -5,13 +5,13 @@ This JSR package is a utility for compressing PDF, image, video and mp3 files us
 ## Features
 
 - **PDF Compression** using Ghostscript
-- Supports PDF files
+-- Supports PDF files
 
 - **Image Compression (Lossy & Lossless)** using ImageMagick
-- Supports JPG, JPEG, and PNG formats
+-- Supports JPG, JPEG, and PNG formats
 
---**Video & MP3 Compression** using FFMPEG
-- Supports mp4 and mp3
+- **Video & MP3 Compression** using FFMPEG
+-- Supports mp4 and mp3
 ---
 
 ## Prerequisite Installation
