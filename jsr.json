@@ -1,6 +1,6 @@
 {
   "name": "@razmans/file-compressor",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "license": "MIT",
   "exports": "./index.ts"
 }
