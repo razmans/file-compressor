@@ -33,18 +33,18 @@ export const compressPDF = async (
     await execPromise(gsCommand);
 
     // Get file sizes
-    const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
+    // const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
     const compressedSize = (await fs.stat(resolvedOutputPath)).size / 1024;
 
     // Log file sizes
-    console.log(`Original size: ${originalSize.toFixed(2)} KB`);
-    console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
-    console.log(
-      `Reduction: ${(
-        ((originalSize - compressedSize) / originalSize) *
-        100
-      ).toFixed(2)}%`
-    );
+    // console.log(`Original size: ${originalSize.toFixed(2)} KB`);
+    // console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
+    // console.log(
+    //   `Reduction: ${(
+    //     ((originalSize - compressedSize) / originalSize) *
+    //     100
+    //   ).toFixed(2)}%`
+    // );
 
     // Return the output path and compressed size
     return {
@@ -103,18 +103,18 @@ export const compressImageLossy = async (
     }
 
     // Get file sizes
-    const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
+    // const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
     const compressedSize = (await fs.stat(resolvedOutputPath)).size / 1024;
 
     // Log file sizes
-    console.log(`Original size: ${originalSize.toFixed(2)} KB`);
-    console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
-    console.log(
-      `Reduction: ${(
-        ((originalSize - compressedSize) / originalSize) *
-        100
-      ).toFixed(2)}%`
-    );
+    // console.log(`Original size: ${originalSize.toFixed(2)} KB`);
+    // console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
+    // console.log(
+    //   `Reduction: ${(
+    //     ((originalSize - compressedSize) / originalSize) *
+    //     100
+    //   ).toFixed(2)}%`
+    // );
 
     return {
       outputPath: resolvedOutputPath,
@@ -173,18 +173,18 @@ export const compressImageLossless = async (
     }
 
     // Get file sizes
-    const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
+    // const originalSize = (await fs.stat(resolvedInputPath)).size / 1024;
     const compressedSize = (await fs.stat(resolvedOutputPath)).size / 1024;
 
     // Log file sizes
-    console.log(`Original size: ${originalSize.toFixed(2)} KB`);
-    console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
-    console.log(
-      `Reduction: ${(
-        ((originalSize - compressedSize) / originalSize) *
-        100
-      ).toFixed(2)}%`
-    );
+    // console.log(`Original size: ${originalSize.toFixed(2)} KB`);
+    // console.log(`Compressed size: ${compressedSize.toFixed(2)} KB`);
+    // console.log(
+    //   `Reduction: ${(
+    //     ((originalSize - compressedSize) / originalSize) *
+    //     100
+    //   ).toFixed(2)}%`
+    // );
 
     return {
       outputPath: resolvedOutputPath,
