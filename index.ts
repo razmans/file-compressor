@@ -197,6 +197,12 @@ export const compressImageLossless = async (
 };
 
 // Define a return type for the function
+/**
+ * Represents the result of a compression operation.
+ *
+ * @property outputPath - The absolute path to the compressed file.
+ * @property compressedSizeKB - The size of the compressed file in kilobytes (KB).
+ */
 export interface CompressResult {
   outputPath: string;
   compressedSizeKB: number;
